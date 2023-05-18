@@ -1,0 +1,134 @@
+body,html{
+    background-color: #131313;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: hsl(208, 100%, 97%);
+    font-family: sans-serif;
+    animation:fade-in-animation 2s ease-in forwards;
+}
+
+@keyframes fade-in-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+#title-name {
+    display: block;
+    margin-left: 0.2rem;
+    margin-bottom: 0%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    font-style:normal;
+}
+
+#histButton{
+    width:40px;
+    height:40px;
+    border-radius: 70px;
+    float:right; 
+    margin-right:15px;
+    cursor: pointer;
+}
+
+
+#solution{
+    background-color: white;
+    color: black;
+    font-size: 2.8rem;
+    width: 78vw;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: right;
+    border: none;
+    padding: 0.4rem 1.4rem;
+}
+
+
+.calculator{
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mainframe{ 
+    padding: 0.25rem;
+    display: inline-block;
+}
+button {
+   color: rgb(255, 255, 255);
+    border: none;
+    background-color: hsl(198, 6%, 39%);
+    width: 20vw;
+    height: 11vh;
+    padding: 0.5rem 0;
+    margin: 0.25vmax;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px 0px rgba(216, 235, 11, 0.5);
+    transition: all 0.5s ease;
+    cursor: pointer;
+} 
+
+#clear-button{
+    background-color: #0084ff;
+    border-radius: 15%;
+}
+#dot-button{
+font-weight: bolder;
+}
+
+#equal-button{
+background-color: rgb(12, 218, 237);
+font-weight: bold;
+border-radius: 15%;
+}
+
+a{
+    text-decoration: none; 
+    color: #67ad87; 
+    margin-left: 0.25rem;
+    outline: none;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+a:hover{
+    text-shadow:  0px 0px 10px rgba(205, 254, 8, 0.5);;
+} 
+
+#bar1, #bar2 {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 93%;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: none;
+}
+
+
+
